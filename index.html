@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resultados de Imagen no disponible — Medilab</title>
+<meta name="description" content="El módulo de Resultados de Imagen de Clínica Medilab está en mantenimiento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    color-scheme: light;
+    --navy:#14315c;
+    --blue:#2f6fed;
+    --mint:#b9f0d3;
+    --mint-ink:#0f5132;
+    --peach:#ffe1c2;
+    --peach-ink:#9a5b1e;
+    --ink:#1b2430;
+    --sub:#5b6779;
+    --paper:#ffffff;
+    --card:#ffffff;
+    --line:#e6ebf5;
+    --logoword:#14315c;
+    --ghosttext:#14315c;
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+    padding-inline:20px;
+    padding-block:28px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-height:100svh;
+  }
+  img{max-width:100%;}
+  h1,h2{font-family:'Outfit',system-ui,sans-serif;text-wrap:balance;}
+
+  .wrap{width:100%;max-width:640px;display:flex;flex-direction:column;gap:28px;flex:1;}
+
+  header{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:12px;flex-wrap:wrap;
+  }
+  .logo{display:flex;align-items:center;gap:10px;}
+  .logo svg{width:34px;height:34px;flex:none;}
+  .logo .word{font-family:'Outfit',sans-serif;font-size:1.25rem;font-weight:700;color:var(--logoword);letter-spacing:-.01em;}
+  .logo .word b{font-weight:800;}
+  .back{
+    font-size:.85rem;font-weight:600;color:var(--blue);text-decoration:none;
+    display:flex;align-items:center;gap:6px;
+  }
+  .back:hover{text-decoration:underline;}
+
+  main{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:44px 32px;
+    display:flex;flex-direction:column;align-items:center;text-align:center;
+    gap:18px;
+    box-shadow:0 1px 2px rgba(20,49,92,.04), 0 12px 32px -20px rgba(20,49,92,.25);
+  }
+
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--mint);color:var(--mint-ink);
+    font-size:.78rem;font-weight:600;letter-spacing:.02em;
+    padding:7px 14px;border-radius:999px;
+  }
+  .badge .dot{width:6px;height:6px;border-radius:50%;background:var(--mint-ink);}
+
+  .art{width:168px;height:168px;margin-block:4px;}
+
+  h1{font-size:1.7rem;font-weight:700;color:var(--ink);margin:0;line-height:1.2;}
+  p.lede{font-size:1rem;color:var(--sub);max-width:44ch;line-height:1.55;margin:0;}
+
+  .divider{width:100%;height:1px;background:var(--line);margin-block:4px;}
+
+  .info{
+    display:flex;flex-wrap:wrap;justify-content:center;gap:10px;
+    font-size:.88rem;color:var(--sub);
+  }
+  .info .chip{
+    display:flex;align-items:center;gap:7px;
+    background:var(--paper);border:1px solid var(--line);
+    padding:8px 14px;border-radius:12px;color:var(--ink);font-weight:500;
+    text-decoration:none;
+  }
+  .info .chip svg{width:15px;height:15px;flex:none;color:var(--blue);}
+
+  .actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:6px;}
+  .btn{
+    font-family:'Inter',sans-serif;font-weight:600;font-size:.92rem;
+    padding:12px 22px;border-radius:12px;text-decoration:none;
+    display:inline-flex;align-items:center;gap:8px;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn.primary{background:var(--blue);color:#fff;box-shadow:0 10px 24px -12px rgba(47,111,237,.55);}
+  .btn.ghost{background:transparent;color:var(--ghosttext);border:1px solid var(--line);}
+
+  footer{
+    text-align:center;font-size:.78rem;color:var(--sub);
+    padding-block:4px 8px;
+  }
+
+  @media (max-width:420px){
+    main{padding:34px 20px;border-radius:16px;}
+    h1{font-size:1.4rem;}
+    .art{width:132px;height:132px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="10" fill="var(--navy)"/>
+        <path d="M20 9v22M9 20h22" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+      <span class="word"><b>medi</b>lab</span>
+    </div>
+    <a class="back" href="https://medilab.com.ec/">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      Volver al sitio
+    </a>
+  </header>
+
+  <main>
+    <span class="badge"><span class="dot"></span>Módulo en mantenimiento</span>
+
+    <svg class="art" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- soft ground shadow -->
+      <ellipse cx="100" cy="176" rx="52" ry="8" fill="var(--navy)" opacity="0.06"/>
+
+      <!-- friendly mascot body -->
+      <circle cx="100" cy="98" r="62" fill="var(--mint)"/>
+      <circle cx="100" cy="98" r="62" fill="var(--blue)" opacity="0.06"/>
+
+      <!-- arm holding wrench -->
+      <path d="M146 118c10 6 18 4 24-4" stroke="var(--mint-ink)" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <g transform="translate(163,96) rotate(28)">
+        <rect x="-7" y="-24" width="14" height="34" rx="6" fill="var(--blue)"/>
+        <path d="M-11-24a11 11 0 1 1 22 0 11 8 0 0 1-8 8h-6a11 8 0 0 1-8-8Z" fill="var(--blue)"/>
+        <circle cx="-4.5" cy="-24" r="3.4" fill="var(--mint)"/>
+        <circle cx="4.5" cy="-24" r="3.4" fill="var(--mint)"/>
+      </g>
+
+      <!-- face -->
+      <circle cx="80" cy="92" r="6.5" fill="var(--navy)"/>
+      <circle cx="112" cy="92" r="6.5" fill="var(--navy)"/>
+      <path d="M78 112c7 9 27 9 34 0" stroke="var(--navy)" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+      <circle cx="66" cy="104" r="7" fill="var(--peach)" opacity="0.9"/>
+      <circle cx="126" cy="104" r="7" fill="var(--peach)" opacity="0.9"/>
+
+      <!-- medical cross badge -->
+      <g transform="translate(100,146)">
+        <circle r="17" fill="#fff"/>
+        <circle r="17" fill="none" stroke="var(--line)" stroke-width="2"/>
+        <path d="M0-8v16M-8 0h16" stroke="var(--blue)" stroke-width="4.4" stroke-linecap="round"/>
+      </g>
+
+      <!-- sparkles -->
+      <path d="M36 60l3 8 8 3-8 3-3 8-3-8-8-3 8-3Z" fill="var(--peach)"/>
+      <path d="M158 52l2.2 6 6 2.2-6 2.2-2.2 6-2.2-6-6-2.2 6-2.2Z" fill="var(--blue)" opacity="0.55"/>
+    </svg>
+
+    <h1>¡Ya casi estamos! Estamos mejorando esta sección</h1>
+    <p class="lede">La consulta de Resultados de Imagen está en mantenimiento por unas horas. Vuelve a intentarlo más tarde, o contáctanos directamente si necesitas tus resultados con urgencia.</p>
+
+    <div class="divider"></div>
+
+    <div class="info">
+      <a class="chip" href="tel:+593739506001040">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        073 950 600 Ext. 1040
+      </a>
+      <a class="chip" href="mailto:tics@medilab.com.ec">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6 12 13 2 6"/><path d="M2 6h20v12H2z"/></svg>
+        tics@medilab.com.ec
+      </a>
+    </div>
+
+    <div class="actions">
+      <a class="btn primary" href="https://medilab.com.ec/resultados/laboratorio">
+        Ir a Resultados de Laboratorio
+      </a>
+      <a class="btn ghost" href="https://medilab.com.ec/contacto">Contáctanos</a>
+    </div>
+  </main>
+
+  <footer>Clínica Medilab &middot; Av. Eugenio Espejo S/N y Shuaras</footer>
+</div>
+</body>
+</html>
